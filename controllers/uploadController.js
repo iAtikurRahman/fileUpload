@@ -16,8 +16,8 @@ const s3 = new AWS.S3({
   httpOptions: {
     maxSockets: 25,
     agent: false,
-    timeout: 120000,
-    connectionTimeout: 120000
+    timeout: 1200000,
+    connectionTimeout: 1200000
   },
   s3ForcePathStyle: true
 });
