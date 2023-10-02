@@ -1,0 +1,16 @@
+{
+    "version":2,
+    "name":"nodescript_deployment",
+    "builds":[
+                {
+                "src": "Server.js",
+                "use": "@vercel/node"
+                }
+            ],
+    "routes":[
+                {
+                "src":"/(.*)",
+                "dest":"/Server.js"
+                }
+            ]
+}
